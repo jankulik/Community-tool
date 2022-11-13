@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title> Community Tool </title>
+		<link rel="icon" type="image/png" href="img/steem.png"/>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+		<link href="css/tableexport.css" rel="stylesheet">
+
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h1> Steem Accounts Scanner </h1>
+						<h4> Check information about accounts </h4>
+
+				  		<textarea id="account_names" placeholder="Account names (one per line, without @)" style="width: 100%;height: 140px;"></textarea>
+
+				  		<button id="button" class="button" onclick={getAccounts(0);return(false);}> Scan accounts </button>
+
+				  		<div id="bar" style="display: none;"></div>
+
+						<span id="table_span"></span>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/xlsx.core.min.js"></script>
+		<script type="text/javascript" src="js/Blob.min.js"></script>
+		<script type="text/javascript" src="js/FileSaver.min.js"></script>
+		<script type="text/javascript" src="js/tableexport.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/steem/dist/steem.min.js"></script>
+    
+		<script src="js/accounts.js"></script>
+	</body>
+</html>

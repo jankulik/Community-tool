@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title> Community Tool </title>
+		<link rel="icon" type="image/png" href="img/steem.png"/>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+		<link href="css/tableexport.css" rel="stylesheet">
+
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h1> Steem Community Tool </h1>
+						<h4> Use various tools to manage your community better </h4>
+
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/delegatees'"> Delegatee Checker </button>
+
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/accounts'"> Accounts Scanner </button>
+
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/comments'"> Comments Scanner </button>
+
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/followers'"> Followers Scanner </button>
+
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/followings'"> Followings Scanner </button>
+						
+						<button id="button" class="button" onclick="location.href='https://jankulik.github.io/Community-tool/tag'"> Tag Scanner </button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/steem/dist/steem.min.js"></script>
+    
+		<script src="js/delegatees.js"></script>
+	</body>
+</html>

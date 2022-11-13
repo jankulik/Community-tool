@@ -1,0 +1,62 @@
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #eee;
+	text-align: center;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #eee;
+}
+
+input {
+	border: 1px solid #888;
+	resize: none;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.button {
+	width: 100%;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 6px 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.loader {
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -350px;
+  width: 200px;
+  height: 10px;
+  background-color: #4CAF50;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    from {left: -350px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
